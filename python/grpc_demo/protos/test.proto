@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package test;
+
+
+service mathServices {
+  rpc surface(surfaceRequest) returns (surfaceReply) {}
+  rpc volume(volumeRequest) returns (volumeReply) {}
+}
+
+message surfaceRequest {
+  int32 width = 1;
+  int32 height = 2;
+}
+
+message surfaceReply {
+  int32 res = 1;
+}
+
+message volumeRequest {
+
+}
+
+message volumeReply {
+
+}
